@@ -1,0 +1,11 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 239, 121) 0%,
+    rgb(12, 215, 144) 100%
+  );
+}
+.todo-app {
+  margin: 2rem auto 0 auto;
+  max-width: 500px;
+}
