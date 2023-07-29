@@ -4,6 +4,7 @@ import TodoList from "../todo-list";
 import FormItem from "../form-item";
 import Appheader from "./app-header";
 import ItemStatusFilter from "../item-status-filter";
+
 import "./App.css";
 
 export default class App extends Component {
@@ -114,9 +115,11 @@ export default class App extends Component {
     return (
       <div className="todo-app">
         <Appheader todo={todoCount} done={doneCount} />
+
         <div className="search-panel">
           <ItemStatusFilter filter={filter} filterChange={this.filterChange} />
         </div>
+
         <TodoList
           todos={visibleItems}
           onDelete={this.deleteItem}
